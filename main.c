@@ -1,7 +1,14 @@
 #include <stdio.h>
 
-int main(void) {
-    /* 課題0403: 入力されたintのデータを1.08倍した結果を整数(int)として表示するプログラムを書け．intへの変換には「キャスト演算(前回スライドを参照のこと)」を使用せよ */
-    
-    return 0;
+int main(void)
+{
+  int input;
+  double kekka;
+  int answer;
+
+  scanf("%d", &input);
+  kekka = input * 1.08;    
+  answer = (int)kekka;    
+  printf("%d", answer);
+  return 0;
 }
